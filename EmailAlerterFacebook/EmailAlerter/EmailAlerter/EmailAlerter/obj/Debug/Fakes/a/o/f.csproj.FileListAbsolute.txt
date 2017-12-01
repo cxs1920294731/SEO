@@ -1,0 +1,12 @@
+F:\FacebookSEO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\obj\Debug\Fakes\a\b\Analysis.Fakes.xml
+F:\FacebookSEO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\obj\Debug\Fakes\a\b\Analysis.Fakes.dll
+F:\FacebookSEO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\obj\Debug\Fakes\a\b\Analysis.Fakes.pdb
+F:\FacebookSEO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\obj\Debug\Fakes\a\b\Analysis.dll
+F:\FacebookSEO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\obj\Debug\Fakes\a\b\EDM4Everbuying.dll
+F:\FacebookSEO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\obj\Debug\Fakes\a\b\HtmlAgilityPack.dll
+F:\FacebookSEO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\obj\Debug\Fakes\a\b\Microsoft.ApplicationBlocks.Data.dll
+F:\FacebookSEO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\obj\Debug\Fakes\a\b\Microsoft.QualityTools.Testing.Fakes.dll
+F:\FacebookSEO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\obj\Debug\Fakes\a\b\Newtonsoft.Json.dll
+F:\FacebookSEO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\obj\Debug\Fakes\a\o\f.csprojResolveAssemblyReference.cache
+F:\FacebookSEO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\obj\Debug\Fakes\a\o\Analysis.Fakes.dll
+F:\FacebookSEO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\obj\Debug\Fakes\a\o\Analysis.Fakes.pdb
