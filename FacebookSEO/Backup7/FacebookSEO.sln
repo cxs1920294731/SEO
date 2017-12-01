@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FacebookSEO", "FacebookSEO\FacebookSEO.vbproj", "{F7ABE70F-9572-4E48-BD2C-9B2AF20CE8F0}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "EmailAlerter", "..\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\EmailAlerter.vbproj", "{9B5665E6-6BBF-4EB6-8A41-B2C15581F1C3}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Analysis", "Analyser\Analysis\Analysis\Analysis.vbproj", "{C4E3D1B0-0626-4F9B-B665-22357A1A404C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7ABE70F-9572-4E48-BD2C-9B2AF20CE8F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7ABE70F-9572-4E48-BD2C-9B2AF20CE8F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7ABE70F-9572-4E48-BD2C-9B2AF20CE8F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7ABE70F-9572-4E48-BD2C-9B2AF20CE8F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B5665E6-6BBF-4EB6-8A41-B2C15581F1C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B5665E6-6BBF-4EB6-8A41-B2C15581F1C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B5665E6-6BBF-4EB6-8A41-B2C15581F1C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B5665E6-6BBF-4EB6-8A41-B2C15581F1C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4E3D1B0-0626-4F9B-B665-22357A1A404C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4E3D1B0-0626-4F9B-B665-22357A1A404C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4E3D1B0-0626-4F9B-B665-22357A1A404C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4E3D1B0-0626-4F9B-B665-22357A1A404C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,2 @@
+F:\gitPRO\FacebookSEO\FacebookSEO\obj\Release\FacebookSEO.Resources.resources
+F:\gitPRO\FacebookSEO\FacebookSEO\obj\Release\FacebookSEO.vbproj.GenerateResource.Cache

@@ -13,4 +13,11 @@ Public Class ProjectInstaller
 
     End Sub
 
+    Private Sub ServiceInstaller1_AfterInstall(sender As Object, e As InstallEventArgs) Handles ServiceInstaller1.AfterInstall
+
+    End Sub
+
+    Private Sub ServiceProcessInstaller1_AfterInstall(sender As Object, e As InstallEventArgs) Handles ServiceProcessInstaller1.AfterInstall
+
+    End Sub
 End Class

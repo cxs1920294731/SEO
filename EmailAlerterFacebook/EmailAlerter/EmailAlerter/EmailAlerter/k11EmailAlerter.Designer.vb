@@ -18,7 +18,7 @@ Imports System.Runtime.Serialization
 Imports System.Xml.Serialization
 
 
-<Assembly: EdmSchemaAttribute("ca92743e-4687-4309-bfbd-7dc139b41e86")>
+<Assembly: EdmSchemaAttribute("97bd4636-a6ec-4224-a9e4-d13bab790085")>
 #Region "EDM Relationship Metadata"
 <Assembly: EdmRelationshipAttribute("FaceBookForSEOModel", "FK_Ads_AutomationSites", "AutomationSites", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, GetType(AutomationSite), "Ads", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, GetType(AutoAd), True)>
 <Assembly: EdmRelationshipAttribute("FaceBookForSEOModel", "FK_Ads_Issue_Ads", "Ads", System.Data.Metadata.Edm.RelationshipMultiplicity.One, GetType(AutoAd), "Ads_Issue", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, GetType(AutoAds_Issue), True)>

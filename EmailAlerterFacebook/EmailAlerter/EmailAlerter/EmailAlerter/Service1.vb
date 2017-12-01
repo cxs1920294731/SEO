@@ -40,8 +40,6 @@ Public Class Service1
         CheckSchedule()
         Me.MainTimer.Enabled = True
     End Sub
-
-
     ''' <summary>
     ''' Check if any new email campaigns to send 
     ''' </summary>
