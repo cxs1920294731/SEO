@@ -31,6 +31,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,6 +41,7 @@
     <OutputPath>bin\</OutputPath>
     <DocumentationFile>FacebookSEO.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -49,6 +51,7 @@
     <OutputPath>bin\</OutputPath>
     <DocumentationFile>FacebookSEO.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <OptionExplicit>On</OptionExplicit>
@@ -63,25 +66,25 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AspNetPager, Version=7.4.5.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\AspNetPager.dll</HintPath>
+    <Reference Include="Analysis">
+      <HintPath>..\..\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\Lib\Analysis.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+    <Reference Include="AspNetPager, Version=7.5.1.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNetPager.7.5.1.0\lib\AspNetPager.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
@@ -89,10 +92,7 @@
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
-    <Reference Include="UrlRewriter, Version=1.0.1495.18710, Culture=neutral">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\UrlRewriter.dll</HintPath>
-    </Reference>
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -118,13 +118,32 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Analysis.dll" />
+    <Content Include="bin\AspNetPager.dll" />
+    <Content Include="bin\Microsoft.QualityTools.Testing.Fakes.dll" />
     <Content Include="Default.aspx" />
     <Content Include="Account\ChangePassword.aspx" />
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="FacebookSEO.vbproj.vspscc" />
+    <Content Include="obj\Debug\FacebookSEO.vbproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\TempPE\Emailalerter1.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\emailAlerterRefreshFBToken.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\k11.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\My Project.Resources.Designer.vb.dll" />
+    <Content Include="obj\Release\FacebookSEO.vbproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\TempPE\emailAlerterRefreshFBToken.Designer.vb.dll" />
+    <Content Include="obj\Release\TempPE\k11.Designer.vb.dll" />
+    <Content Include="obj\Release\TempPE\My Project.Resources.Designer.vb.dll" />
+    <Content Include="posts.aspx" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery.fancybox-1.3.1.pack.js" />
     <Content Include="Scripts\jquery.wookmark.min.js" />
+    <Content Include="SiteMap.xml" />
     <Content Include="templates\k11Description.htm" />
     <Content Include="templates\k11DescriptionSC.htm" />
     <Content Include="templates\PageTitle.htm" />
@@ -192,6 +211,11 @@
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Emailalerter1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Emailalerter.edmx</DependentUpon>
+    </Compile>
     <Compile Include="emailAlerterRefreshFBToken.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -231,6 +255,13 @@
       <DependentUpon>Post.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="posts.aspx.designer.vb">
+      <DependentUpon>posts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="posts.aspx.vb">
+      <DependentUpon>posts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="shops.aspx.designer.vb">
       <DependentUpon>shops.aspx</DependentUpon>
     </Compile>
@@ -253,6 +284,8 @@
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="UrlValid.vb" />
+    <Compile Include="Wuqi.vb" />
+    <Compile Include="Wuqi1.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -261,9 +294,13 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\FacebookSEO.Resources.resources" />
+    <EmbeddedResource Include="obj\Release\FacebookSEO.Resources.resources" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Account\Web.config" />
+    <Content Include="Account\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <EntityDeploy Include="k11.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>k11.Designer.vb</LastGenOutput>
@@ -271,6 +308,12 @@
     <EntityDeploy Include="emailAlerterRefreshFBToken.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>emailAlerterRefreshFBToken.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+    <Fakes Include="Fakes\Analysis.fakes" />
+    <Fakes Include="Fakes\UrlRewriter.fakes" />
+    <EntityDeploy Include="Emailalerter.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Emailalerter1.Designer.vb</LastGenOutput>
     </EntityDeploy>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -283,6 +326,27 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <Content Include="Site.Master" />
+    <Content Include="packages.config" />
+    <Content Include="obj\Debug\build.force" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\emailAlerterRefreshFBToken.csdl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\emailAlerterRefreshFBToken.msl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\emailAlerterRefreshFBToken.ssdl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\k11.csdl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\k11.msl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\k11.ssdl" />
+    <Content Include="obj\Debug\FacebookSEO.vbproj.GenerateResource.Cache" />
+    <Content Include="obj\Debug\FacebookSEO.vbprojFakesResolveAssemblyReference.cache" />
+    <Content Include="obj\Debug\FacebookSEO.vbprojResolveAssemblyReference.cache" />
+    <Content Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Release\edmxResourcesToEmbed\emailAlerterRefreshFBToken.csdl" />
+    <Content Include="obj\Release\edmxResourcesToEmbed\emailAlerterRefreshFBToken.msl" />
+    <Content Include="obj\Release\edmxResourcesToEmbed\emailAlerterRefreshFBToken.ssdl" />
+    <Content Include="obj\Release\edmxResourcesToEmbed\k11.csdl" />
+    <Content Include="obj\Release\edmxResourcesToEmbed\k11.msl" />
+    <Content Include="obj\Release\edmxResourcesToEmbed\k11.ssdl" />
+    <Content Include="obj\Release\FacebookSEO.vbproj.GenerateResource.Cache" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -292,10 +356,7 @@
     <Folder Include="Styles\bootstrapV3.3.4\css\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Analyser\Analysis\Analysis\Analysis.vbproj">
-      <Project>{C4E3D1B0-0626-4F9B-B665-22357A1A404C}</Project>
-      <Name>Analysis</Name>
-    </ProjectReference>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -3,6 +3,7 @@
   <PropertyGroup>
     <NameOfLastUsedPublishProfile>seo</NameOfLastUsedPublishProfile>
     <UseIISExpress>false</UseIISExpress>
+    <ProjectView>ShowAllFiles</ProjectView>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>

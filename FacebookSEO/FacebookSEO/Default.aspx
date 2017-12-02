@@ -52,8 +52,7 @@
         <script type="text/javascript">
             $(function () {
                 var loadedImages = 0, // Counter for loaded images
-                    handler = $('#tiles .Itemli'); // Get a reference to your grid items.
-
+                    handler = $('#tiles .Itemli'); // Get a reference to your grid items
                 // Prepare layout options.
                 var options = {
                     autoResize: true, // This will auto-update the layout when the browser window is resized.
@@ -117,7 +116,7 @@
     </webdiyer:AspNetPager>
     <br/>
     <div style ="margin-left:50px;">
-        <%=homePage  %>
+        <%=homePage %>
     </div>
     <div style="margin-left: 20px;">
         <span style="display: block; line-height: 25px; color: #333333;font-size: 14px;">
@@ -149,14 +148,14 @@
                                 Response.Write(hottopic & "熱門話題：<br/>")
                             End If
                         End If
-                    
+
                         For Each itemKey As KeyWord In listKeyWords
                             Response.Write("<span><a href='" & itemKey.KeyUrl & "/" & itemKey.ID & "' style='color:#3e3e3e; text-decoration:none;font-size:13px;'> #" &
                                                         itemKey.KeyWord1 & "</a></span>")
                             Response.Write("&nbsp;&nbsp;&nbsp;&nbsp;")
                         Next
                         Response.Write("</div>")
-                    
+
                     End If
                 End If
                 %>

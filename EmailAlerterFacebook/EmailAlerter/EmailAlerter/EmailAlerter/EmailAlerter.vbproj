@@ -67,6 +67,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Lib\Analysis.dll</HintPath>
     </Reference>
+    <Reference Include="AspNetPager, Version=7.5.1.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\FacebookSEO\packages\AspNetPager.7.5.1.0\lib\AspNetPager.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="EDM4Everbuying, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Lib\EDM4Everbuying.dll</HintPath>
@@ -134,9 +138,9 @@
     <Compile Include="GetSpreadReportData.vb" />
     <Compile Include="InsertSpecialCateAndSort.vb" />
     <Compile Include="k11EmailAlerter.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>k11EmailAlerter.edmx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="Models\ClickData.vb" />
     <Compile Include="Models\Subscriptions.vb" />
@@ -190,6 +194,12 @@
     </Compile>
     <Compile Include="SortCategory.vb" />
     <Compile Include="SpecialCode.vb" />
+    <Compile Include="SpreadAutoModel.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpreadAutoModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="SpreadAutoModel1.Designer.vb" />
     <Compile Include="SQLDAL\RssContactLists.vb" />
     <Compile Include="SQLDAL\RssSubscriptions.vb" />
     <Compile Include="SQLDAL\SentLogs.vb" />
@@ -216,6 +226,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\EmailAlerter.ProjectInstaller.resources" />
+    <EmbeddedResource Include="obj\Debug\EmailAlerter.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\EmailAlerter.Service1.resources" />
     <EmbeddedResource Include="ProjectInstaller.resx">
       <SubType>Designer</SubType>
       <DependentUpon>ProjectInstaller.vb</DependentUpon>
@@ -226,11 +239,15 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="k11EmailAlerter.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>k11EmailAlerter.Designer.vb</LastGenOutput>
-    </EntityDeploy>
     <Fakes Include="Fakes\Analysis.fakes" />
+    <None Include="bin\Debug\Analysis.Fakes.fakesconfig" />
+    <None Include="bin\Debug\App_Data\Send\2017-12-1.log" />
+    <None Include="bin\Debug\App_Data\Send\2017-12-2.log" />
+    <None Include="bin\Debug\EmailAlerter.exe.config" />
+    <None Include="bin\Debug\EmailAlerter.vshost.exe.config" />
+    <None Include="bin\Debug\EmailAlerter.vshost.exe.manifest" />
+    <None Include="FakesAssemblies\Analysis.Fakes.fakesconfig" />
+    <None Include="FakesAssemblies\Analysis.Fakes.messages" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -241,6 +258,32 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="obj\Debug\build.force" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\edmxResourcesToEmbed\k11EmailAlerter.csdl" />
+    <None Include="obj\Debug\edmxResourcesToEmbed\k11EmailAlerter.msl" />
+    <None Include="obj\Debug\edmxResourcesToEmbed\k11EmailAlerter.ssdl" />
+    <None Include="obj\Debug\EmailAlerter.vbproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\EmailAlerter.vbprojFakesResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\EmailAlerter.vbprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\Fakes\a\b\Analysis.Fakes.fakesconfig" />
+    <None Include="obj\Debug\Fakes\a\f.ah" />
+    <None Include="obj\Debug\Fakes\a\f.ch" />
+    <None Include="obj\Debug\Fakes\a\f.fakes" />
+    <None Include="obj\Debug\Fakes\a\f.fakesconfig" />
+    <None Include="obj\Debug\Fakes\a\o\f.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\Fakes\fakes.args" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="packages.config" />
+    <EntityDeploy Include="k11EmailAlerter.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>k11EmailAlerter.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="SpreadAutoModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SpreadAutoModel.Designer.vb</LastGenOutput>
+    </EntityDeploy>
     <None Include="Web References\IntrawWebService\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.vb</LastGenOutput>
@@ -322,15 +365,61 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\Analysis.dll" />
+    <Content Include="bin\Debug\AspNetPager.dll" />
+    <Content Include="bin\Debug\AspNetPager.xml" />
+    <Content Include="bin\Debug\EDM4Everbuying.dll" />
+    <Content Include="bin\Debug\EmailAlerter.exe" />
+    <Content Include="bin\Debug\EmailAlerter.pdb" />
+    <Content Include="bin\Debug\EmailAlerter.vshost.exe" />
+    <Content Include="bin\Debug\EmailAlerter.xml" />
+    <Content Include="bin\Debug\HtmlAgilityPack.dll" />
+    <Content Include="bin\Debug\Microsoft.ApplicationBlocks.Data.dll" />
+    <Content Include="bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll" />
+    <Content Include="bin\Debug\Newtonsoft.Json.dll" />
+    <Content Include="bin\Debug\zh-CHS\AspNetPager.resources.dll" />
+    <Content Include="bin\Debug\zh-CHT\AspNetPager.resources.dll" />
+    <Content Include="EmailAlerter.vbproj.vspscc" />
+    <Content Include="FakesAssemblies\Analysis.Fakes.dll" />
+    <Content Include="FakesAssemblies\Analysis.Fakes.xml" />
     <Content Include="Lib\Analysis.dll" />
     <Content Include="Lib\EDM4Everbuying.dll" />
     <Content Include="Lib\HtmlAgilityPack.dll" />
     <Content Include="Lib\Microsoft.ApplicationBlocks.Data.dll" />
     <Content Include="Lib\Newtonsoft.Json.dll" />
+    <Content Include="obj\Debug\EmailAlerter.exe" />
+    <Content Include="obj\Debug\EmailAlerter.pdb" />
+    <Content Include="obj\Debug\EmailAlerter.vbproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\EmailAlerter.xml" />
+    <Content Include="obj\Debug\Fakes\a\b\Analysis.dll" />
+    <Content Include="obj\Debug\Fakes\a\b\Analysis.Fakes.dll" />
+    <Content Include="obj\Debug\Fakes\a\b\Analysis.Fakes.pdb" />
+    <Content Include="obj\Debug\Fakes\a\b\Analysis.Fakes.xml" />
+    <Content Include="obj\Debug\Fakes\a\b\EDM4Everbuying.dll" />
+    <Content Include="obj\Debug\Fakes\a\b\HtmlAgilityPack.dll" />
+    <Content Include="obj\Debug\Fakes\a\b\Microsoft.ApplicationBlocks.Data.dll" />
+    <Content Include="obj\Debug\Fakes\a\b\Microsoft.QualityTools.Testing.Fakes.dll" />
+    <Content Include="obj\Debug\Fakes\a\b\Newtonsoft.Json.dll" />
+    <Content Include="obj\Debug\Fakes\a\f.cs" />
+    <Content Include="obj\Debug\Fakes\a\f.csproj" />
+    <Content Include="obj\Debug\Fakes\a\o\Analysis.Fakes.dll" />
+    <Content Include="obj\Debug\Fakes\a\o\Analysis.Fakes.pdb" />
+    <Content Include="obj\Debug\Fakes\a\o\f.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\TempPE\k11EmailAlerter.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\My Project.Resources.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\RSS2Email.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\Web References.IntrawWebService.Reference.vb.dll" />
+    <Content Include="obj\Debug\TempPE\Web References.SpreadService.Reference.vb.dll" />
+    <Content Include="obj\Release\TempPE\k11EmailAlerter.Designer.vb.dll" />
+    <Content Include="obj\Release\TempPE\My Project.Resources.Designer.vb.dll" />
+    <Content Include="obj\Release\TempPE\RSS2Email.Designer.vb.dll" />
+    <Content Include="obj\Release\TempPE\Web References.IntrawWebService.Reference.vb.dll" />
+    <Content Include="obj\Release\TempPE\Web References.SpreadService.Reference.vb.dll" />
     <None Include="Web References\SpreadService\service.disco" />
     <None Include="Web References\IntrawWebService\Service.disco" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\Release\" />
     <Folder Include="HtmlAgility\" />
   </ItemGroup>
   <ItemGroup>

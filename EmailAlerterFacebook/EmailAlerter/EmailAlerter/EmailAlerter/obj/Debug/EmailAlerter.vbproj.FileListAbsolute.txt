@@ -54,12 +54,6 @@ F:\gitPRO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\obj\Debug\
 F:\gitPRO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\bin\Debug\EmailAlerter.exe
 F:\gitPRO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\bin\Debug\EmailAlerter.pdb
 F:\gitPRO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\bin\Debug\EmailAlerter.xml
-F:\gitPRO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\bin\Debug\Analysis.dll
-F:\gitPRO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\bin\Debug\EDM4Everbuying.dll
-F:\gitPRO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\bin\Debug\HtmlAgilityPack.dll
-F:\gitPRO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
-F:\gitPRO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
-F:\gitPRO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\bin\Debug\Newtonsoft.Json.dll
 F:\gitPRO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\obj\Debug\EmailAlerter.vbprojFakesResolveAssemblyReference.cache
 F:\gitPRO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\obj\Debug\Fakes\a\b\Analysis.dll
 F:\gitPRO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\obj\Debug\Fakes\a\b\Analysis.Fakes.dll
@@ -87,3 +81,6 @@ F:\gitPRO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\obj\Debug\
 F:\gitPRO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\obj\Debug\EmailAlerter.ProjectInstaller.resources
 F:\gitPRO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\obj\Debug\EmailAlerter.Service1.resources
 F:\gitPRO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\obj\Debug\EmailAlerter.vbproj.GenerateResource.Cache
+F:\gitPRO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\bin\Debug\AspNetPager.xml
+F:\gitPRO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\bin\Debug\zh-CHS\AspNetPager.resources.dll
+F:\gitPRO\EmailAlerterFacebook\EmailAlerter\EmailAlerter\EmailAlerter\bin\Debug\zh-CHT\AspNetPager.resources.dll

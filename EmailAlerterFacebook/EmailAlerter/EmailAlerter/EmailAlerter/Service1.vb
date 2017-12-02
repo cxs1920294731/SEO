@@ -45,15 +45,11 @@ Public Class Service1
     ''' </summary>
     ''' <remarks></remarks>
     Sub CheckSchedule()
-
         'Common.LogText("Schedule Start")
         'System.Threading.Thread.Sleep(1000)
-
-
         Dim A As New alerter
         Try
             Dim autoTest As New AutoModel()
-
             autoTest.GetRssSubscriptionAndInsertAndSentEmail(listLog)
 
 
@@ -66,7 +62,6 @@ Public Class Service1
                 GetSiteMap.SiteMap()
                 Common.LogText("sitemap end")
             End If
-
         Catch ex As Exception
             Common.LogException(ex)
         End Try
